@@ -75,7 +75,7 @@
   "locale": "zh-Hans",
   "h5": {
     "router": {
-      "base": "/unibest/"
+      "base": "/"
     }
   }
 }
