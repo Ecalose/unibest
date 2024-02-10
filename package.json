@@ -1,8 +1,8 @@
 {
   "name": "unibest",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "unibest - 最好用的 uniapp 开发框架",
-  "type": "commonjs",
   "author": {
     "name": "Burt",
     "zhName": "菲鸽",
@@ -10,15 +10,14 @@
     "github": "https://github.com/codercup",
     "gitee": "https://gitee.com/codercup"
   },
+  "license": "MIT",
   "repository": "https://github.com/codercup/unibest",
   "repository-gitee": "https://gitee.com/codercup/unibest",
-  "license": "MIT",
   "engines": {
     "node": ">=16",
-    "pnpm": ">=7"
+    "pnpm": ">=7.30"
   },
   "scripts": {
-    "postinstall": "node ./shell/postinstall.js",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -53,7 +52,7 @@
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-    "prepare": "husky install",
+    "prepare": "node ./shell/postinstall.js & git init && husky install ",
     "type-check": "vue-tsc --noEmit"
   },
   "lint-staged": {
@@ -135,7 +134,6 @@
     "unocss": "^0.58.0",
     "unplugin-auto-import": "^0.17.2",
     "vite": "4.0.3",
-    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-restart": "^0.4.0",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vue-setup-extend": "^0.4.0",

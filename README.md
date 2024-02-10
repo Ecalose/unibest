@@ -14,10 +14,12 @@
 [![GitHub forks](https://img.shields.io/github/forks/codercup/unibest?style=flat&logo=github)](https://github.com/codercup/unibest)
 [![star](https://gitee.com/codercup/unibest/badge/star.svg?theme=dark)](https://gitee.com/codercup/unibest/stargazers)
 [![fork](https://gitee.com/codercup/unibest/badge/fork.svg?theme=dark)](https://gitee.com/codercup/unibest/members)
-![node version](https://img.shields.io/badge/node-%3E%3D18-green)
+![node version](https://img.shields.io/badge/node-%3E%3D16-green)
 ![pnpm version](https://img.shields.io/badge/pnpm-%3E%3D7.30-green)
 ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/codercup/unibest)
-![author](https://img.shields.io/badge/author-菲鸽-blue)
+[![Github](https://img.shields.io/badge/github-菲鸽-1e80ff?logo=github)](https://github.com/codercup)
+[![Gitee](https://img.shields.io/badge/gitee-菲鸽-1e80ff?logo=gitee)](https://gitee.com/codercup)
+[![Juejin](https://img.shields.io/badge/juejin-菲鸽-1e80ff?logo=juejin)](https://juejin.cn/user/3263006241460792)
 ![GitHub License](https://img.shields.io/github/license/codercup/unibest)
 
 </div>
@@ -27,13 +29,9 @@
 ![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <p align="center">
-  <a href="https://codercup.github.io/unibest/">📱 在线预览(github)</a> 
+  <a href="https://codercup.github.io/unibest/" target="_blank">📱 在线预览</a> 
   <span style="margin:0 10px;">|</span> 
-  <a href="https://codercup.gitee.io/unibest/">📱 在线预览(gitee)</a> 
-  <span style="margin:0 10px;">|</span> 
-  <a href="#">📖 阅读文档(github)</a>
-  <span style="margin:0 10px;">|</span> 
-  <a href="#">📖 阅读文档(gitee)</a>
+  <a href="#" target="_blank">📖 阅读文档(comming soon)</a>
 </p>
 
 ## ✨ 特性
@@ -103,7 +101,7 @@
 ## 🔗 发布
 
 - web平台： `pnpm build:h5`，打包后的文件在 `dist/build/h5`，可以放到web服务器，如nginx运行。如果最终不是放在根目录，可以在 `manifest.config.ts` 文件的 `h5.router.base` 属性进行修改。
-- weixin平台：`pnpm build:h5`, 打包后的文件在 `dist/build/mp-weixin`，然后通过微信开发者工具导入，并点击右上角的“上传”按钮进行上传。
+- weixin平台：`pnpm build:mp-weixin`, 打包后的文件在 `dist/build/mp-weixin`，然后通过微信开发者工具导入，并点击右上角的“上传”按钮进行上传。
 - APP平台：`pnpm build:app`, 然后打开 `HBuilderX`，导入刚刚生成的`dist/build/app` 文件夹，选择发行 - APP云打包。
 
 ## 🎨 `v3` 代码段
@@ -111,12 +109,6 @@
 在 `vue` 文件里面输入 `v3` 触发这个代码段。如下图，用户可以在`.vscode/vue3.code-snippets` 里面自行修改。
 
 ![v3 snippets](./screenshots/snippets.gif)
-
-## &#x1F3C6; 贡献者
-
-感谢以下参与项目的人：
-
-TODO ADD
 
 ## 📄 License
 
@@ -147,12 +139,4 @@ Copyright (c) 2024 菲鸽
 
 <p align='center'>
 <img alt="special sponsor appwrite" src="./screenshots/wx-group.png" width="300" style="margin-left:0px;">
-</p>
-
-## 💖 微信公众号
-
-欢迎关注公众号“菲鸽爱编程”——坚持原创，用心写文，分享知识，共同成长。里面会不定期分享前端、Nodejs、微信小程序、开源库等方面的优秀文章。
-
-<p align='center'>
-<img alt="special sponsor appwrite" src="./screenshots/wx-gzh.png" width="300" style="margin-left:0px;">
 </p>
