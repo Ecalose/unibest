@@ -19,9 +19,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 设置服务器时区为东八区
-      - name: Set time zone
-        run: sudo timedatectl set-timezone 'Asia/Shanghai'
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
         with:
@@ -31,13 +28,13 @@ jobs:
           node-version: '18'
           cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm i --no-frozen-lockfile
+        run: pnpm i
       - name: Build
-        run: pnpm build:h5
+        run: pnpm docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/build/h5
+          path: ./docs/.vitepress/dist
 
   # Deployment job
   deploy:
