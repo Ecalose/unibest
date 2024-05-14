@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/unibest-docs/',
+  base: '/unibest/',
   title: 'unibest',
   description: '最好用的 uniapp 开发模板',
   lastUpdated: true,
