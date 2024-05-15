@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/codercup/unibest">
-    <img width="160" src="./src/static/logo.svg">
+    <img width="160" src="./logo.svg">
   </a>
 </p>
 
